@@ -7,19 +7,52 @@
   margin: 0;
   padding: 0;
   width: 100vw;
+  display: flex;
 
-  .side-bar {
+  .chat-side {
     background-color: #253141;
     width: 300px;
-    float: left;
-    &__user-name {
+    .side-header {
       background-color: #253141;
       height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      color: white;
+      &__box {
+        height: 20px;
+        background-color: #253141;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+        &__menu {
+          display: flex;
+          li {
+            margin-left: 5px;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
     }
-    &__gourp-list {
+    .groups {
       height: calc(100vh - 100px);
       background-color: #2f3e51;
-      padding-top: 200px;
+      padding: 20px 20px 0;
+      .group {
+        color: white;
+        margin-bottom: 40px;
+        text-decoration: none;
+        &__group-name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__latest-messagge {
+          font-size: 11px;
+        }
+      }
     }
   } 
 
@@ -27,11 +60,11 @@
     height: 100%;
     background-color:gray;
     width: calc(100% - 300px);
-    float: left;
     &__group-info {
       background-color:#ffffff;
       height: 100px;
       width: 100%;
+      border: solid #eeeeee;
     }
     &__message-list {
       background-color: #fafafa;
