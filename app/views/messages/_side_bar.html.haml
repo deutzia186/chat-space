@@ -13,8 +13,14 @@
             = icon('fas','cog')
             %span<>
   .groups
-    = link_to '#', class:"group" do
-      %p.group__group-name
+    = link_to "#", class: "group" do
+      %p.group__name
         test
-      %p.group__latest-messagge
+      %p.group__message
+        まだメッセージがありません
+
+    = link_to "#", class: "group" do
+      %p.group__name
+        test
+      %p.group__message
         まだメッセージがありません
