@@ -1,0 +1,36 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        text
+      %ul.main-header__left-box__member-list
+        Member:
+        %li.main-header__left-box__member-list-member
+    .main-header__edit-btn
+      = link_to "#" do
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info-talker
+          talkername
+        .message__upper-info-date
+          2020/01/01
+      .message__text
+        aaaaaaaa
+    .message
+      .message__upper-info
+        .message__upper-info-talker
+          talkername
+        .message__upper-info-date
+          2020/01/01
+      .message__text
+        aaaaaaaa
+  .forms
+    .form
+      .input-box
+        %input{type:"text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type:"file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
